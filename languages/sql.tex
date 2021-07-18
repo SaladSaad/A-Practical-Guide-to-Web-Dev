@@ -1,0 +1,64 @@
+\begin{codeBlock}{sql}{Common Manipulation Statements}
+CREATE TABLE creates a new table.
+INSERT INTO adds a new row to a table.
+SELECT queries data from a table.
+ALTER TABLE changes an existing table.
+UPDATE edits a row in a table.
+DELETE FROM deletes rows from a table.
+\end{codeBlock}
+
+\begin{codeBlock}{sql}{Common Data Types}
+INTEGER, a positive or negative whole number
+TEXT, a text string
+DATE, the date formatted as YYYY-MM-DD for the year, month, and day
+REAL, a decimal value 
+\end{codeBlock}
+
+\begin{codeBlock}{sql}{Wildcard Characters}
+* is used with SELECT FROM statements to display everything about a table
+_ is used with LIKE to fill a void for certain characters. Unlike %, _ only fills in for one character.
+% is used with LIKE to declare a void of zero or more characters.
+\end{codeBlock}
+
+\clearpage
+\section{Examples}
+
+\begin{codeBlock}{sql}{{Creating Tables, Insert values, Displaying Columns}}
+DROP TABLE IF EXISTS celebs;
+CREATE TABLE celebs(
+    id INTEGER PRIMARY KEY,
+    name TEXT, 
+    age INTEGER, 
+    twitter_handle TEXT);
+INSERT INTO celebs(id, name, age, twitter_handle)
+VALUES(1, "Saad", 19, "@saadjizlenizle"),
+(2, "hammad", 26, "@hammad"),
+(3, "Ayesha", 22, "@ayesha");
+SELECT name, age, twitter_handle FROM celebs ORDER BY id DESC //or ASC
+\end{codeBlock}
+
+\begin{codeBlock}{mysql}{{Creating Tables, Insert values, Displaying Columns}}
+ ALTER TABLE celebs 
+ ADD twitter_handle TEXT;
+ ALTER TABLE celebs
+ ADD email TEXT;
+\end{codeBlock}
+
+\begin{codeBlock}{mysql}{{ALTER TABLE in MySQL}}
+ALTER TABLE celebs
+ADD twitter handle TEXT, email TEXT;
+\end{codeBlock}
+
+\begin{codeBlock}{mysql}{{UPDATE - edits a row in a table}}
+UPDATE celebs
+SET twitter_handle="@ayesha" 
+WHERE name="Ayesha";
+//To edit an entire column, remove the where statement
+\end{codeBlock}
+
+\begin{codeBlock}{mysql}{{DELETE one or more rows from a table}}
+DELETE FROM celebs 
+WHERE twitter_handle IS NULL;
+\end{codeBlock}
+
+\section{Queries}

@@ -1,0 +1,121 @@
+\section{Front-End Framework - FE, \emph{FS} \small{(Choose one)}}
+As a front-end developer, you will most likely need to be familiar with a popular front-end JS framework. These allow you to create Single Page Web Apps (SPWAs). The page loads from the pre-built JS from the framework that is then inserted into a single page. Frameworks allow you to have intricate user interfaces that are possible with vanilla JS but harder and more time-consuming. 
+
+Working with a framework and a team makes it much easier because you have standards that devs can follow instead of customized JS that you created that no one else understands. You can use any framework on the front-end with any language on the server. i.e. React can be used with AI and back-end can be created in Python/Java/C\#.
+
+To pick what to learn, see what is being used by jobs in your area or where you want to work.
+
+\begin{itemize}
+    \item React - Most popular in the industry. Library to which you can add packages to make it function as a framework. 
+    \item Vue - A bit easier to learn than React and has a great community. 
+    \item Angular - Angular is the hardest to learn of all. It uses TypeScript and is backed by Google. Angular is a full-fledged framework.
+    \item Svelte - Not branded as a framework but as a compiler. But, it allows you to write JS in a clean and effective way just like any other framework. Use for personal projects, not professional.
+\end{itemize}
+
+Each of these framework has it's own ecosystem and part of that system is state management. State management is basically the state of your application - is the menu open or closed? data displayed? State can be local to a specific element or can be global to share across your entire app or UI. Global state managers can help manage global state as it can get messy. These are the following state managers used by different front-end frameworks. 
+
+\begin{itemize}
+    \item React - Context API, Redux, MobX
+        
+        Context API is built into React and is great for smaller/medium sized apps. If you have different types of data your app holds, you might want to look into Redux. Redux is the most popular 3rd-party state manager for React.
+    \item Vue - Vuex
+    \item Angular - Shared Service, NgRx
+    
+        Angular is a larger framework and is more full-featured. It has built-in services to spread state/data across your components. 
+    \item Svelte - Context API
+\end{itemize}
+
+\section{TypeScript - \emph{FE, BE, FS}}
+
+TypeScript is a super-set of JS and is popular on it's own as well as being paired with a FE framework. It's not something you have to learn right away but is pretty popular in the industry. Since JS is dynamically typed, which means that you don't have to define our variables or functions as strings, numbers, booleans, etc. 
+
+TS basically is JS but has static types. It helps you find errors before they occur and is really robust. However, it is something else you have to learn and more code to type. Seems like one of those things that you prefer not to do until you start using it and can't type JS any other way. Just like JS, TS can be used with other front-end frameworks and on the back-end if you're using Node.js.
+
+\section{Testing}
+Testing is a great thing to have in your toolkit. It helps prevent problems before they happen. This goes for all languages. 
+
+\begin{itemize}
+    \item Unit Tests - Individual units like functions or classes.
+    \item Integration Test - Modules tested as a group.
+    \item End-to-End Tests - Test workflow from start to finish. 
+\end{itemize}
+
+There are testing frameworks available for different languages. For example, Jest and Mocha for JS and PyTest and Robot for Python.
+\begin{itemize}
+    \item Brings a "strict" type system to JS. 
+    \item Makes your code more robust and less prone to errors.
+    \item Object-oriented-programming (classes, interfaces, generics, modules).
+    \item Great for larger projects.
+\end{itemize}
+\begin{tcolorbox}
+    The rest of the front-end section consists of technologies that are trending and becoming more popular. You don't need to focus on these until you get to the point where you're comfortable with a front-end framework. This is because these technologies are part of a framework ecosystem.
+\end{tcolorbox}
+
+
+\section{Server Side Rendering \small{(Choose one)}}
+
+Normally, you build a SPWA which runs on the client, browser loads the JS bundle and everything happens on the browser. In this case, if you look at the source code in your browser, you see the JS files that load your application. This method results in web crawlers being unable to see your content. There are ways around this but, using Server side rendering solves this problem by default. Furthermore, it's possible to run a front-end framework on the server. There are advantages to this - better SEO, easy routing, better performance, etc. 
+
+\begin{itemize}
+    \item Next.js - React
+    \item Nuxt.js - Vue
+    \item Angular Universal - Angular
+    \item Sapper - Svelte
+\end{itemize}
+
+\section{Static Site Generators \small{(Choose one)}}
+
+SSG's generate your website pages at build-time as opposed to real-time, making them super fast and secure. This way, there's no generation of HTML or calls to a database, it just responds with the file itself. This makes your website very fast and easy to host. Static site doesn't mean you can't have dynamic functionality or work with data. 
+
+\begin{itemize}
+    \item Gatsby - React based.
+    \item Gridsome - Vue based. 
+    \item 11ty - JS alternative to Jekyll.
+    \item Jekyll - Ruby based.
+    \item Hugo - Go based. 
+\end{itemize}
+Just because a SSG is based on a language doesn't mean you need to know that language to use it. Other languages have their own SSGs as well.
+
+\section{Headless CMS}
+Back-end only content management system that is commonly used with static site generators. 
+
+You or your client can log into an area and create content for your site without touching any code. Wordpress and Drupal inlude interfaces for a front-facing website and a part where you login and add data. A headless CMS works in a similar fashion but doesn't have that front-facing webpage. It's used strictly for the data part and you can add whatever you want for the front-end. A popular option is to use Gatsby(static site generator) and connect that to a headless CMS. 
+
+There are some headless CMSs that are hosted elsewhere and have premium packages. Some charge you once you go over a quota but can be generous and allow you to host a personal blog free-of-charge. 
+\begin{itemize}
+    \item Strapi
+    
+    Open-source, node.js headless CMS that you host yourself. No subscription, free, and easy to use. 
+    \item Sanity.io
+    \item Contentful
+    \item Prismic
+    \item Wordpress
+    
+    Wordpress can also be used as a headless CMS because it has a REST API built into it.
+\end{itemize}
+
+\section{The Jamstack - JavaScript, APIs and Markup}
+The past few sections and technologies can be fit into the Jamstack. The Jamstack is a web architecture with high performance, security, and scalability at a low cost with a great dev experience. These aren't new concepts but what is new is the way we use them. 
+
+Unlike the MERN stack (MongoDB, Express, React, Node.js), the Jamstack has a plethora of technologies to choose from including:
+
+\begin{itemize}
+    \item Static Sites
+    \item Markdown
+    \item Serverless
+    
+    Serverless is a big trend which means you don't have to manage your own server. Your cloud provider runs the server and allocates machine resources on-demand. 
+    \item Headless CMS for Content
+    \item Hosting with services like Netlify, AWS (also offers serverless architectures).
+\end{itemize}
+
+\section{Front-end Superstar Conclusion - FE, \emph{FS}}
+\begin{itemize}
+    \item Build apps and interfaces with a frontend framework
+    \item Work with compononent and global state
+    \item Connect to backend JSON data and integrate into your apps
+    \item Write and test clean and efficient code
+    \item \emph{Use TypeScript to write more robust code}
+    \item \emph{Server side rendering}
+    \item \emph{Static site generators/Jamstack}
+\end{itemize}

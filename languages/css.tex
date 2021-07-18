@@ -1,0 +1,173 @@
+\subsubsection{Inline CSS}
+Here's how you would set your h2 element's text color to blue:
+
+\begin{codeBlock}{html}{Inline CSS}
+<h2 style="color: blue;">CatPhotoApp</h2>
+\end{codeBlock}
+
+\begin{tcolorbox}
+It is a good practice to end inline style declarations with a ; .
+\end{tcolorbox}
+
+\subsubsection{Global CSS}
+\begin{codeBlock}{html}{Changing global styles}
+<style>
+  h2 {
+    color: red;
+  }
+</style>
+\end{codeBlock}
+Note that it's important to have both opening and closing curly braces (\{ and \}) around each element's style rule(s). You also need to make sure that your element's style definition is between the opening and closing style tags. Finally, be sure to add a semicolon to the end of each of your element's style rules.
+
+\subsubsection{CSS Classes}
+\begin{codeBlock}{html}{CSS Clss Declarations}
+<style>
+  .blue-text {
+    color: blue;
+  }
+</style>
+\end{codeBlock}
+
+You can see that we've created a CSS class called blue-text within the \mintinline{html}{<style>} tag. You can apply a class to an HTML element like this: \mintinline{html}{<h2 class="blue-text">CatPhotoApp</h2>}. Note that in your CSS style element, class names start with a period. In your HTML elements' class attribute, the class name does not include the period.
+
+\subsubsection{Font Degradation}
+For example, if you wanted an element to use the Helvetica font, but degrade to the sans-serif font when Helvetica isn't available, you will specify it as follows:
+\begin{codeBlock}{css}{Font Degradation}
+p {
+  font-family: Helvetica, sans-serif;
+}
+\end{codeBlock}
+Generic font family names are not case-sensitive. Also, they do not need quotes because they are CSS keywords.
+
+\subsubsection{id Attribute}
+In addition to classes, each HTML element can also have an id attribute.
+
+There are several benefits to using id attributes: You can use an id to style a single element and later you'll learn that you can use them to select and modify specific elements with JavaScript.
+
+id attributes should be unique. Browsers won't enforce this, but it is a widely agreed upon best practice. So please don't give more than one element the same id attribute.
+
+Here's an example of how you give a h2 element the id of cat-photo-app:
+
+\begin{codeBlock}{html}{Setting an id Attribute}
+
+<h2 id="cat-photo-app">
+\end{codeBlock}
+
+\subsubsection{Styles Using id}
+One cool thing about id attributes is that, like classes, you can style them using CSS.
+
+However, an id is not reusable and should only be applied to one element. An id also has a higher specificity (importance) than a class so if both are applied to the same element and have conflicting styles, the styles of the id will be applied.
+
+Here's an example of how you can take your element with the id attribute of cat-photo-element and give it the background color of green. In your style element:
+\begin{codeBlock}{css}{id Attribute Style}
+#cat-photo-element {
+  background-color: green;
+}
+\end{codeBlock}
+
+\subsubsection{Alignment, margin, and Padding}
+Three important properties control the space that surrounds each HTML element: padding, border, and margin.
+
+An element's \emph{padding} controls the amount of space between the element's content and its border.
+
+An element's \emph{margin} controls the amount of space between an element's border and surrounding elements.
+
+If you set an element's \emph{margin} to a negative value, the element will grow larger.
+
+\subsubsection{Clockwise Notation for Padding}
+Instead of specifying an element's padding-top, padding-right, padding-bottom, and padding-left properties individually, you can specify them all in one line, like this:
+\mint{css}{padding: 10px 20px 10px 20px;
+}
+These four values work like a clock: top, right, bottom, left, and will produce the exact same result as using the side-specific padding instructions.
+
+\subsubsection{Measurement Units}
+The two main types of length units are absolute and relative. Absolute units tie to physical units of length. For example, in and mm refer to inches and millimeters, respectively. Absolute length units approximate the actual measurement on a screen, but there are some differences depending on a screen's resolution.
+
+Relative units, such as em or rem, are relative to another length value. For example, em is based on the size of an element's font. If you use it to set the font-size property itself, it's relative to the parent's font-size.
+
+\href{https://www.w3.org/Style/Examples/007/units.en.html}{This article} written by Bert Bos, a member of the W3C board, goes more in-depth about absolute and relative units in CSS. According to Bert, the uses of each unit differs by medium.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c|c|c|c}
+         &Recommended & Occasional Use & Not Recommended\\
+         \hline\hline
+         Screen & em,px, \%&ex&pt, cm, mm, in, pc \\
+         Print& em, cm, mm, in, pt, pc, \%&px, ex&\\ 
+    \end{tabular}
+    \caption{Recommended Usage of Units}
+\end{table}
+Absolute units (cm, mm, in, pt, and pc) should be avoided in uses other than print. The reason being that an inch on a desktop screen looks very small when compared to an inch on a mobile phone. In this case, using a relative unit (em, ex, px, \%) is better.
+
+The magic unit of CSS, the px, is a often a good unit to use, especially if the style requires alignment of text to images, or simply because anything that is 1px wide or a multiple of 1px is guaranteed to look sharp.
+
+But for font sizes it is even better to use em. The idea is (1) to not set the font size of the BODY element (in HTML), but use the default size of the device, because that is a size that the reader can comfortably read; and (2) express font sizes of other elements in em: H1 {font-size: 2.5em} to make the H1 2$\frac{1}{2}$ times as big as the normal, body font.
+
+The only place where you could use pt (or cm or in) for setting a font size is in style sheets for print, if you need to be sure the printed font is exactly a certain size. But even there using the default font size is usually better.
+
+\begin{tcolorbox}
+
+The px unit thus shields you from having to know the resolution of the device. Whether the output is 96dpi, 100dpi, 220dpi or 1800dpi, a length expressed as a whole number of px always looks good and very similar across all devices. But what if you do want to know the resolution of the device, e.g., to know if it is safe to use a 0.5px line? The answer is to check the resolution via Media Queries. Explaining Media Queries is out of scope for this article, but here is a small example:
+\end{tcolorbox}
+
+\begin{codeBlock}{css}{Media Query Example}
+div.mybox { border: 2px solid }
+@media (min-resolution: 2dppx) {
+  /* Media with 2 or more dots per px */
+  div.mybox { border: 1.5px solid }
+}
+\end{codeBlock}
+
+\subsubsection{Overriding CSS}
+A class overrides the body's style properties. Class B declared after class A overrides the overlapping effects of class A regardless of order of use in html. For example:
+
+\begin{codeBlock}{html}{Overriding CSS}
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+  #orange-text {
+    color: orange;
+  }
+</style>
+
+<h1 class="pink-text blue-text" id="orange-text">Hello World!</h1>
+\end{codeBlock}
+
+Because \mintinline{css}{.blue-text} was declared in \mintinline{html}{<style></style>} after \mintinline{css}{.pink-text}, it takes priority. However, the id will take precedence over the class and override it's effects. Furthermore, inline styles override all stye declarations. Lastly, the most powerful overrides is that of \emph{!important}. Adding this to any CSS declaration ensures that that style is implemented.
+
+\subsubsection{Variables}
+Create a custom CSS Variable
+
+To create a CSS variable, you just need to give it a name with two hyphens in front of it and assign it a value like this:
+\begin{codeBlock}{css}{Setting a Variable}
+--penguin-skin: gray;
+\end{codeBlock}
+
+This will create a variable named --penguin-skin and assign it the value of gray. Now you can use that variable elsewhere in your CSS to change the value of other elements to gray.
+
+\subsubsection{Fallback Values for Variables}
+
+Despite the following code having a typo, the browser displays a black color for the background because of the fallback.
+\begin{codeBlock}{css}{Fallbacks}
+  .penguin {
+    --penguin-skin: black;
+    --penguin-belly: gray;
+    --penguin-beak: yellow;
+  }
+
+  .penguin-top {
+    top: 10%;
+    left: 25%;
+
+    background: var(--pengiun-skin, black);
+  }
+\end{codeBlock}

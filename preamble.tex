@@ -1,0 +1,43 @@
+%------------------ Itemize types
+\renewcommand{\theenumi}{\Alph{enumi}}
+\renewcommand{\theenumii}{\Roman{enumii}}
+\newcommand{\nl}[0]{\\\hline}
+
+%--------------- Code Blocks
+\newcounter{code}[chapter]
+\tcbuselibrary{minted}
+\tcbuselibrary{skins}
+\newtcblisting{codeBlock}[3][]{
+    arc=3mm,
+    skin=enhanced,
+    drop fuzzy shadow,
+    attach boxed title to top center={yshift=-2mm},
+    colframe=red!75!black,
+    colback=red!5!white,
+    coltitle=black,
+    sharp corners,
+    rounded corners=downhill,
+    colbacktitle=red!50!white,
+    minted options={breaklines, xleftmargin=20pt, linenos, style=default, autogobble=true},
+    minted language=#2,
+    #1,
+    listing only,
+    title=\stepcounter{code}\thesection.\thecode: #3 (#2)
+}
+
+%---------------------- Hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+\urlstyle{same}
+%---------------------------------
+
+
+\title{A Practical Guide to Web Development}
+\author{Saad Sheikh}
+\date{June 16, 2021}

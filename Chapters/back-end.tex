@@ -1,0 +1,172 @@
+\section{Server Side Language - BE, FS \small{(Choose one)}}
+The back-end/server focuses on data, modeling, and HTTP requests/responses. A server side language is needed for back-end/full stack development.
+
+\begin{itemize}
+    \item Node.js (JavaScript)
+    
+    If you already know a good amount of JavaScript, Node.js is a pretty good option. However, it really comes down to what you want to do and what you're interested in.
+    \item Deno (JavaScript)
+    \item Python
+    
+    Python is a great language to learn in general. Good for AI and machine learning but also used in web dev.
+    \item C\#
+    
+    Check out what companies in your area are using. If they're using C\# you might want to learn it.
+    \item GoLang
+    
+    Another language created by Google. Similar to C but has garbage collection and memory safety which makes it easier to learn than C. Often used to program large-scale servers. Often used in the big business enterprise world.
+    \item Ruby
+    
+    If you choose Ruby, you're probably going to be using Ruby on Rails. RoR is great for rAPId development and has lots of integrated tools. Ruby's not as relevant as it once was but before you set it aside for good, check out jobs in your area.
+    \item PHP
+    
+    There's still lots of websites that use PHP. If you're freelancing or creating small-scale web apps, PHP can be a really good option. It uses Wordpress. 
+    \item Java
+    
+    Probably the most relevant in the big business world. 
+    \item Kotlin
+    
+    Kotlin is being used in a lot of places that Java used to be used like Android web development.
+\end{itemize}
+
+\section{Server Side Framework - BE, FS \small{(Choose one)}}
+A framework is usually used in back-end web development. Before you jump into a framework, you should learn a good amount of a language - fundamentals, ecosystem, package managers, etc, and then move on to a framework. Most of the time, you're going to be using a framework and not building everything from scratch. 
+
+\begin{itemize}
+    \item Node - Express, Koa, Nest, Loopback
+    
+    Express is the most popular. Pretty minimalistic. Allows you to handle and customize the HTTP request/response cycle pretty easily, create middleware, add routing endpoints, etc. 
+    
+    Koa is very similar to Express. Nest.js is a larger, more fully-featured framework for Node that uses TypeScript by default. 
+    
+    Loopback allows you to easily create REST APIs with a GUI tool
+    \item Python - Django, Flask
+    
+    Django is very full-featured and high level. Admin area built-in. Very specific ways to do things but get a lot of bang for your buck. Flask is low-level and minimalistic which gives you a lot of freedom to do things. Similar to Express.
+    \item PHP - Laravel, Symfony, Slim
+    
+    Laravel is pretty elegant and a good framework. Laravel is actually based off of Symfony. Symfony is a little harder to learn than Laravel. 
+    \item C\# - ASP.NET
+    
+    ASP.NET is very powerful and uses the .NET framework. Used a lot in the industry.
+    \item Java - Spring MVC
+    \item Ruby - Ruby on Rails, Sinatra
+    
+    Ruby on Rails is another MVC framework. Has lots of tools to allow you to build quickly.
+    \item Kotlin - Javalin, KTor
+\end{itemize}
+
+\section{Database - BE, FS \small{(Choose one)}}
+Back-end/Fullstack devs work with databases and ORM/ODMS.
+
+A huge part of working on the back-end of a web application or creating APIs for services is working with data and that usually includes working with a database of some kind. 
+
+There are many types of databases, the most popular are relational databases or SQL (structured query language) databases and NoSQL databases which also have a subset of database types. For example, MongoDB is a document database. 
+
+\begin{itemize}
+    \item PostgresSQL
+    Relational database. Popular with PHP but great with lots of languages.
+    \item MongoDB
+    
+    Document database. Popular with JS stacks like MERN (MongoDB, Express, React, Node.js). Very JS/JSON like, flexible, and scalable.
+    \item MySQL
+    \item MS SQL Server
+    \item Firebase
+    
+    An entire platform. Data and file storage, authentication, easy API. A combination of something like React and Firebase might not be great for giant, scalable applications but might be a good solution for small, personal projects or small business solutions. 
+    \item Elasticsearch
+    
+    Search engine based database. Provides full text search with an http interface and schema free JSON documents.
+\end{itemize}
+
+Object relational mappers/ object data mappers give you an abstract layer for your application to interact with your database. A lot of times, you don't actually have to write SQL queries, you just have an API to interact with your database.
+
+\begin{itemize}
+    \item Mongoose
+    
+    Popular with Node.js and MongoDB
+    \item Sequelize
+    
+    Also used for PostgresSQL and should be usable with multiple with different SQL languages. 
+    \item SQLAlchemy
+    
+    A ORM for python.
+    \item Doctrine
+    \item Eloquent
+    
+    Used by Laravel.
+    
+\end{itemize}
+
+Obviously, there are a lot of databases. Just do your research on what's available for your language/framework.
+
+\section{GraphQL}
+GraphQL is basically a data query language for APIs. In many cases we create and consume data using restful APIs where send a specific HTTP request to a specific endpoint to get a bunch of data. GraphQL is used in a similar fashion but, instead of having all these different endpoints that return all this different data (even stuff you don't need), GraphQL provides a single endpoint and you can make queries based on the data that you need, so you don't have to get everything. 
+
+For example, if it's an API of user information and all you need is the first and last name, you can make a request or a query to get just the first and last name. The queries that you send to a GraphQL server are formatted similar to JSON which is the format of the response. The query looks like the response. If you already know JavaScript and JSON, making and receiving queries is really easy. 
+
+\begin{itemize}
+    \item Send a query (similar to JSON) to your API and get exactly what you need. 
+    \item Setup a GraphQL server and query using a client like Apollo (can be implemented with Node.js and other languages). 
+    \item More targeted than a REST API and saves a bunch of trips to the server.
+    \item Easily use with React and other frameworks.
+\end{itemize}
+
+\section{Socket.io and Real-Time Technologies}
+Real-time applications are becoming more popular. Socket.io allows real-time, bidirectional communication.
+
+In a lot of cases you have a client-side and you send HTTP requests to the server where the server is Express, Django, Laravel, etc, and you have to make a separate request for each task. 
+
+Using websockets (Socket.io) you have a constant bi-directional communication through events. There's all sorts of apps and services that you can create using websockets.
+\begin{itemize}
+    \item Instant messaging and chat.
+    \item Real-time analytics.
+    \item Document collaboration.
+    \item Binary streaming.
+    \item Much more...
+\end{itemize}
+
+\section{WordPress Development}
+WordPress is still used, especially in the small business world. If your goal is to work at a large corporation, you can probably skip on WordPress. If you want to do freelancing for the mom and pop shop down the road, WordPress may be a pretty good choice. 
+
+\begin{itemize}
+    \item Setup websites quickly.
+    \item Give your clients complete control.
+    \item Tons of plugins to add functionality.
+    \item Create custom themes and plugins.
+    \item Wordpress can be used as a headless CMS since it has it's own REST API.
+\end{itemize}
+
+\section{Deployment, Servers, and DevOps - \emph{BE, FS}}
+Deploying apps to production, monitoring, security, containerization/virtualization and more.
+
+As you become a more advanced developer, you're probably going to learn about DevOps, deployment strategies, and hosting platforms. Hosting a full stack app or an API is a bit more difficult than a front-end app or static website. You need to deal with servers, configurations, file storage, databases, and more. 
+\begin{itemize}
+    \item Hosting platforms - Heroku, Digital Ocea, AWS, Azure
+    
+    Heroku is pretty good for small apps and personal projects. Digital Ocean is useful larger apps built to scale. Digital Ocean is a cloud hosting company and it gives you full control over everything including the operating system you want to install. It takes a bit more knowledge than something like Heroku which is basically a platform as a service. Where Heroku is setup and ready for you to use, Digital Ocean is an empty computer that is ready for you to use. AWS is a very popular option for large scale options. Azure is a pretty popular Microsoft platform.
+    \item Web Servers - NGINX, Apache
+    
+    You need some kind of webserver to serve your back-end code. NGINX and Apache are really popular. NGINX is easier to configure and works well with Node.js and PHP. However, if you use a platform such as Heroku, you probably don't have to do much configuration. 
+    \item Containers - Docker/Kubernetes, Vagrant
+    
+    If you're doing DevOps, you definitely want to familiarize yourself with Docker. Gives you a way to run your applications in a virtual environment called a container. Useful for teams so your app runs in the same environment regardless of its physical location. 
+    
+    Kubernetes is often used with Docker. It's a system for automating the management of containers. It's extremely popular in the DevOps world. 
+    \item Image/Video - Cloudinary, S3
+    
+    For image and video hosting you can use a local method or you can choose to upload to something like Cloudinary or Amazon S3. Cloudinary has all types of media APIs that let you manipulate and optimize your media. 
+    \item CI/CD - Jenkins, Travis CI, Circle CI
+    
+    Continuous integration and continuous deployment is also something you'll need if you go into DevOps. Jenkins and Travis CI are popular when it comes to facilitating and automating continuous automation, testing, and deployment. As a web developer, you most likely won't have to come close to mastering these technologies. It's more on the DevOps side of things but it's good to get your feet wet.
+\end{itemize}
+
+\section{Conclusion: Full Stack Developer - BE, FS}
+\begin{itemize}
+    \item Comfortable with both building front-end UIs and servers.
+    \item Know a server-side language/technology (framework).
+    \item Can work with and structure databases, work with ORMs/ODMs. 
+    \item Understand HTTP and Create RESTful APIs.
+    \item Can successfully deploy full stack projects.
+    \item Very comfortable with the terminal - navigating your system, using GIT, working with certain CLIs, network commands, etc.
+\end{itemize}

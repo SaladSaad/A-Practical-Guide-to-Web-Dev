@@ -1,0 +1,68 @@
+\contentsline {chapter}{\large Preface}{3}{chapter*.2}%
+\contentsline {chapter}{\large Resources}{4}{chapter*.3}%
+\contentsline {section}{\numberline {0.1}Learn to Code}{4}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Coding Interview Prep}{4}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Advice and Application}{5}{section.0.3}%
+\contentsline {chapter}{\numberline {1}Getting Started}{6}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Before You Begin Learning}{6}{section.1.1}%
+\contentsline {chapter}{\numberline {2}The Building Blocks}{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}HTML and CSS - FE, FS, \emph {BE}}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Sass - \emph {FE, FS}}{9}{section.2.2}%
+\contentsline {section}{\numberline {2.3}CSS Frameworks - FE, \emph {FS} \small {(Choose one)}}{9}{section.2.3}%
+\contentsline {section}{\numberline {2.4}UI Design - FE}{9}{section.2.4}%
+\contentsline {section}{\numberline {2.5}JavaScript - FE, \emph {BE, FS}}{10}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Deployment}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Basic Front-end Deployment - FE, BE, FS}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Basics Conclusion- FE, FS}{12}{section.3.2}%
+\contentsline {section}{\numberline {3.3}What Now?}{13}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Front-end Superstar}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Front-End Framework - FE, \emph {FS} \small {(Choose one)}}{14}{section.4.1}%
+\contentsline {section}{\numberline {4.2}TypeScript - \emph {FE, BE, FS}}{15}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Testing}{16}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Server Side Rendering \small {(Choose one)}}{16}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Static Site Generators \small {(Choose one)}}{17}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Headless CMS}{17}{section.4.6}%
+\contentsline {section}{\numberline {4.7}The Jamstack - JavaScript, APIs and Markup}{18}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Front-end Superstar Conclusion - FE, \emph {FS}}{19}{section.4.8}%
+\contentsline {chapter}{\numberline {5}Back-end/Full Stack}{20}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Server Side Language - BE, FS \small {(Choose one)}}{20}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Server Side Framework - BE, FS \small {(Choose one)}}{21}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Database - BE, FS \small {(Choose one)}}{22}{section.5.3}%
+\contentsline {section}{\numberline {5.4}GraphQL}{24}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Socket.io and Real-Time Technologies}{24}{section.5.5}%
+\contentsline {section}{\numberline {5.6}WordPress Development}{25}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Deployment, Servers, and DevOps - \emph {BE, FS}}{25}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Conclusion: Full Stack Developer - BE, FS}{27}{section.5.8}%
+\contentsline {chapter}{\numberline {6}Extras}{28}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Mobile Development \small {(Choose one)}}{28}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Progressive Web Apps (PWA)}{29}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Desktop Apps with Web Technologies}{29}{section.6.3}%
+\contentsline {section}{\numberline {6.4}AI/Machine Learning}{29}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Web Assembly}{30}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Algorithms}{30}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Data structures (Primitive and non-primitive)}{30}{section.6.7}%
+\contentsline {section}{\numberline {6.8}Software Design Patterns}{30}{section.6.8}%
+\contentsline {chapter}{\numberline {7}What Now}{32}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Learning Plan}{34}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Example Job Postings}{36}{section.7.2}%
+\contentsline {subsubsection}{Qualifications and Skills}{36}{section*.11}%
+\contentsline {subsubsection}{Responsibilities}{36}{section*.12}%
+\contentsline {subsubsection}{Qualifications and Skills}{37}{section*.14}%
+\contentsline {subsubsection}{Responsibilities}{37}{section*.15}%
+\contentsline {subsubsection}{Education and Experience}{39}{section*.18}%
+\contentsline {chapter}{\numberline {8}Languages}{40}{chapter.8}%
+\contentsline {section}{\numberline {8.1}HTML}{40}{section.8.1}%
+\contentsline {subsubsection}{Input Labels}{40}{section*.19}%
+\contentsline {section}{\numberline {8.2}CSS}{42}{section.8.2}%
+\contentsline {subsubsection}{Inline CSS}{42}{section*.20}%
+\contentsline {subsubsection}{Global CSS}{42}{section*.21}%
+\contentsline {subsubsection}{CSS Classes}{43}{section*.22}%
+\contentsline {subsubsection}{Font Degradation}{43}{section*.23}%
+\contentsline {subsubsection}{id Attribute}{43}{section*.24}%
+\contentsline {subsubsection}{Styles Using id}{44}{section*.25}%
+\contentsline {subsubsection}{Alignment, margin, and Padding}{44}{section*.26}%
+\contentsline {subsubsection}{Clockwise Notation for Padding}{45}{section*.27}%
+\contentsline {subsubsection}{Measurement Units}{45}{section*.28}%
+\contentsline {subsubsection}{Overriding CSS}{46}{section*.30}%
+\contentsline {subsubsection}{Variables}{47}{section*.31}%
+\contentsline {subsubsection}{Fallback Values for Variables}{48}{section*.32}%

@@ -1,0 +1,12 @@
+  .penguin {
+    --penguin-skin: black;
+    --penguin-belly: gray;
+    --penguin-beak: yellow;
+  }
+
+  .penguin-top {
+    top: 10%;
+    left: 25%;
+
+    background: var(--pengiun-skin, black);
+  }

@@ -1,0 +1,55 @@
+\documentclass[12pt, oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, multicol, float, graphicx, mathtools, wrapfig, caption, subcaption, comment, minted, hyperref, tcolorbox, import, multicol, microtype, ulem}
+
+\import{./}{preamble.tex}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\chapter*{Preface}
+\import{./Pre}{preface.tex}
+
+\chapter*{Resources}
+\import{./Pre}{resources.tex}
+
+\chapter{Getting Started}
+\import{./Pre}{getting started.tex}
+
+\chapter{The Building Blocks}
+\import{./Chapters}{the building blocks.tex}
+
+\chapter{Deployment}
+\import{./Chapters}{deployment.tex}
+
+\chapter{Front-end Superstar}
+\import{./Chapters}{front-end superstar}
+
+\chapter{Back-end/Full Stack}
+\import{./Chapters}{back-end}
+
+\chapter{Extras}
+\import{./Chapters}{extras}
+
+\chapter{What Now}
+\import{./Chapters}{conclusion}
+
+\chapter{Languages}
+\section{HTML}
+\import{./languages}{html}
+
+\section{CSS}
+\import{./languages}{css}
+
+
+
+
+\end{document}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{}
+    \caption{Caption}
+    \label{fig:my_label}
+\end{figure}

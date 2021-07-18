@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{style}\PYG{p}{\PYGZgt{}}
+  \PYG{n+nt}{body} \PYG{p}{\PYGZob{}}
+    \PYG{k}{background\PYGZhy{}color}\PYG{p}{:} \PYG{k+kc}{black}\PYG{p}{;}
+    \PYG{k}{font\PYGZhy{}family}\PYG{p}{:} \PYG{k+kc}{monospace}\PYG{p}{;}
+    \PYG{k}{color}\PYG{p}{:} \PYG{k+kc}{green}\PYG{p}{;}
+  \PYG{p}{\PYGZcb{}}
+  \PYG{p}{.}\PYG{n+nc}{pink\PYGZhy{}text} \PYG{p}{\PYGZob{}}
+    \PYG{k}{color}\PYG{p}{:} \PYG{k+kc}{pink}\PYG{p}{;}
+  \PYG{p}{\PYGZcb{}}
+  \PYG{p}{.}\PYG{n+nc}{blue\PYGZhy{}text} \PYG{p}{\PYGZob{}}
+    \PYG{k}{color}\PYG{p}{:} \PYG{k+kc}{blue}\PYG{p}{;}
+  \PYG{p}{\PYGZcb{}}
+  \PYG{p}{\PYGZsh{}}\PYG{n+nn}{orange\PYGZhy{}text} \PYG{p}{\PYGZob{}}
+    \PYG{k}{color}\PYG{p}{:} \PYG{k+kc}{orange}\PYG{p}{;}
+  \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{style}\PYG{p}{\PYGZgt{}}
+
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{h1} \PYG{n+na}{class}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}pink\PYGZhy{}text blue\PYGZhy{}text\PYGZdq{}} \PYG{n+na}{id}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}orange\PYGZhy{}text\PYGZdq{}}\PYG{p}{\PYGZgt{}}Hello World!\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{h1}\PYG{p}{\PYGZgt{}}
+\end{Verbatim}

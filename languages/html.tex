@@ -1,0 +1,57 @@
+\subsubsection{Input Labels}
+It is considered best practice to set a \emph{for} attribute on the \emph{label} element, with a value that matches the value of the \emph{id} attribute of the input element. This allows assistive technologies to create a linked relationship between the \emph{label} and the related input element. For example:
+\begin{codeBlock}{html}{Labels and inputs}
+    <input id="indoor" type="radio" name="indoor-outdoor">
+    <label for="indoor">Indoor</label>
+\end{codeBlock}
+
+Alternatively, we can nest \emph{input} elements within \emph{label} tags.
+\begin{codeBlock}{html}{Alternative Code}
+    <label for="indoor"> 
+        <input id="indoor" type="radio" name="indoor-outdoor">Indoor 
+    </label>
+\end{codeBlock}
+
+All related radio buttons should have the same \emph{name} attribute to create a radio button group. By creating a radio group, selecting any single radio button will automatically deselect the other buttons within the same group ensuring only one answer is provided by the user.
+
+\begin{codeBlock}{html}{Label Groups}
+<label for="indoor">
+    <input id="indoor" type="radio" name="indoor-outdoor"> Indoor
+</label>
+<label for="outdoor">
+    <input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor
+</label>    
+\end{codeBlock}
+Here, you have two radio inputs. When the user submits the form with the indoor option selected, the form data will include the line: indoor-outdoor=indoor. This is from the name and value attributes of the "indoor" input.
+
+If you omit the value attribute, the submitted form data uses the default value, which is on. 
+
+\begin{codeBlock}{html}{Input Values}
+
+<label for="indoor">
+  <input id="indoor" value="indoor" type="radio" name="indoor-outdoor">Indoor
+</label>
+<label for="outdoor">
+  <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor
+</label>
+\end{codeBlock}
+
+Then any markup with the content of the page (what displays for a user) would go into the body tag.
+
+Metadata elements, such as link, meta, title, and style, typically go inside the head element.
+
+Here's an example of a page's layout:
+\begin{codeBlock}{html}{Page Layout}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta />
+  </head>
+  <body>
+    <div>
+    </div>
+  </body>
+</html>
+
+\end{codeBlock}
