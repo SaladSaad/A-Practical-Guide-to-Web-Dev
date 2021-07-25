@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{div}\PYG{p}{.}\PYG{n+nc}{mybox} \PYG{p}{\PYGZob{}} \PYG{k}{border}\PYG{p}{:} \PYG{l+m+mi}{2}\PYG{k+kt}{px} \PYG{k+kc}{solid} \PYG{p}{\PYGZcb{}}
+\PYG{p}{@}\PYG{k}{media} \PYG{o}{(}\PYG{n+nt}{min\PYGZhy{}resolution}\PYG{o}{:} \PYG{n+nt}{2dppx}\PYG{o}{)} \PYG{p}{\PYGZob{}}
+  \PYG{c}{/* Media with 2 or more dots per px */}
+  \PYG{n+nt}{div}\PYG{p}{.}\PYG{n+nc}{mybox} \PYG{p}{\PYGZob{}} \PYG{k}{border}\PYG{p}{:} \PYG{l+m+mf}{1.5}\PYG{k+kt}{px} \PYG{k+kc}{solid} \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

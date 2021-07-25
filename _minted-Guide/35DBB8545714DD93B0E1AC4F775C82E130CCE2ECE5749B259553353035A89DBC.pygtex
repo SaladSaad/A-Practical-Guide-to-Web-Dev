@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{.}\PYG{n+nc}{penguin} \PYG{p}{\PYGZob{}}
+  \PYG{n+nv}{\PYGZhy{}\PYGZhy{}penguin\PYGZhy{}skin}\PYG{p}{:} \PYG{k+kc}{black}\PYG{p}{;}
+  \PYG{n+nv}{\PYGZhy{}\PYGZhy{}penguin\PYGZhy{}belly}\PYG{p}{:} \PYG{k+kc}{gray}\PYG{p}{;}
+  \PYG{n+nv}{\PYGZhy{}\PYGZhy{}penguin\PYGZhy{}beak}\PYG{p}{:} \PYG{k+kc}{yellow}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{penguin\PYGZhy{}top} \PYG{p}{\PYGZob{}}
+  \PYG{k}{top}\PYG{p}{:} \PYG{l+m+mi}{10}\PYG{k+kt}{\PYGZpc{}}\PYG{p}{;}
+  \PYG{k}{left}\PYG{p}{:} \PYG{l+m+mi}{25}\PYG{k+kt}{\PYGZpc{}}\PYG{p}{;}
+
+  \PYG{k}{background}\PYG{p}{:} \PYG{n+nf}{var}\PYG{p}{(}\PYG{n+nv}{\PYGZhy{}\PYGZhy{}pengiun\PYGZhy{}skin}\PYG{p}{,} \PYG{k+kc}{black}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

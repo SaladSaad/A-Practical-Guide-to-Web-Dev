@@ -66,3 +66,8 @@
 \contentsline {subsubsection}{Overriding CSS}{46}{section*.30}%
 \contentsline {subsubsection}{Variables}{47}{section*.31}%
 \contentsline {subsubsection}{Fallback Values for Variables}{48}{section*.32}%
+\contentsline {subsection}{\numberline {8.2.1}Applied Visual Design}{48}{subsection.8.2.1}%
+\contentsline {subsubsection}{Text-Align}{48}{section*.33}%
+\contentsline {subsubsection}{Bold, Underline, Italicize}{48}{section*.34}%
+\contentsline {subsubsection}{Strikethrough}{49}{section*.35}%
+\contentsline {subsubsection}{Box Shadow}{49}{section*.36}%

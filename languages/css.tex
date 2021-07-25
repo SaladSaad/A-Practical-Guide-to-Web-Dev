@@ -93,7 +93,7 @@ Relative units, such as em or rem, are relative to another length value. For exa
          &Recommended & Occasional Use & Not Recommended\\
          \hline\hline
          Screen & em,px, \%&ex&pt, cm, mm, in, pc \\
-         Print& em, cm, mm, in, pt, pc, \%&px, ex&\\ 
+         Print& em, cm, mm, in, pt, pc, \%&px, ex&\\
     \end{tabular}
     \caption{Recommended Usage of Units}
 \end{table}
@@ -171,3 +171,63 @@ Despite the following code having a typo, the browser displays a black color for
     background: var(--pengiun-skin, black);
   }
 \end{codeBlock}
+
+\subsection{Applied Visual Design}
+\subsubsection{Text-Align}
+Text is often a large part of web content. CSS has several options for how to align it with the text-align property.
+
+\mintinline{css}{text-align:} justify; causes all lines of text except the last line to meet the left and right edges of the line box.
+
+\mintinline{css}{text-align:} center; centers the text
+
+\mintinline{css}{text-align:} right; right-aligns the text
+
+And \mintinline{css}{text-align: left;} (the default) left-aligns the text.
+
+\subsubsection{Bold, Underline, Italicize}
+To make text bold, you can use the strong tag. This is often used to draw attention to text and symbolize that it is important. With the strong tag, the browser applies the CSS of font-weight: bold; to the element.
+\mintinline{html}{<strong></strong>}
+
+To underline text, you can use the u tag. This is often used to signify that a section of text is important, or something to remember. With the u tag, the browser applies the CSS of text-decoration: underline; to the element. The u tag is equivalent to the browser applying the CSS of \mintinline{css}{text-decoration:underline;}
+
+\mintinline{html}{<u></u>}
+
+To emphasize text, you can use the em tag. This displays text as italicized, as the browser applies the CSS of \mintinline{css}{font-style: italic;} to the element.
+
+\mintinline{html}{<em></em>}
+
+\subsubsection{Strikethrough}
+To strikethrough text, which is when a horizontal line cuts across the characters, you can use the s tag. It shows that a section of text is no longer valid. With the s tag, the browser applies the CSS of \mintinline{css}{text-decoration: line-through;} to the element.
+\mint{html}{<s></s>}
+
+\subsubsection{Box Shadow}
+
+
+The box-shadow property applies one or more shadows to an element.
+
+The box-shadow property takes values for
+
+    \mintinline{css}{offset-x} (how far to push the shadow horizontally from the element),
+    \mintinline{css}{offset-y} (how far to push the shadow vertically from the element),
+    \mintinline{css}{blur-radius},
+    \mintinline{css}{spread-radius} and
+    \mintinline{css}{color}, in that order.
+
+The blur-radius and spread-radius values are optional.
+
+Multiple box-shadows can be created by using commas to separate properties of each box-shadow element.
+
+Here's an example of the CSS to create multiple shadows with some blur, at mostly-transparent black colors:
+
+\mint{css}{box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
+
+\subsubsection{Hover State of an Anchor Tag}
+A pseudo-class is a keyword that can be added to selectors, in order to select a specific state of the element.
+
+For example, the styling of an anchor tag can be changed for its hover state using the :hover pseudo-class selector. Here's the CSS to change the color of the anchor tag to red during its hover state:
+
+\mint{css}{
+a:hover {
+color: red;
+}
+}
