@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{position}\PYG{o}{:} \PYG{n+nt}{absolute} \PYG{o}{|} \PYG{n+nt}{relative} \PYG{o}{|} \PYG{n+nt}{fixed} \PYG{o}{|} \PYG{n+nt}{sticky}
+\end{Verbatim}

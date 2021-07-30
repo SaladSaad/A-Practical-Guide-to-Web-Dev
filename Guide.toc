@@ -49,7 +49,6 @@
 \contentsline {subsubsection}{Responsibilities}{36}{section*.12}%
 \contentsline {subsubsection}{Qualifications and Skills}{37}{section*.14}%
 \contentsline {subsubsection}{Responsibilities}{37}{section*.15}%
-\contentsline {subsubsection}{Education and Experience}{39}{section*.18}%
 \contentsline {chapter}{\numberline {8}Languages}{40}{chapter.8}%
 \contentsline {section}{\numberline {8.1}HTML}{40}{section.8.1}%
 \contentsline {subsubsection}{Input Labels}{40}{section*.19}%
@@ -71,3 +70,17 @@
 \contentsline {subsubsection}{Bold, Underline, Italicize}{48}{section*.34}%
 \contentsline {subsubsection}{Strikethrough}{49}{section*.35}%
 \contentsline {subsubsection}{Box Shadow}{49}{section*.36}%
+\contentsline {subsubsection}{Hover State of an Anchor Tag}{50}{section*.37}%
+\contentsline {subsubsection}{Absolute Position}{50}{section*.38}%
+\contentsline {subsubsection}{Fixed Position}{50}{section*.39}%
+\contentsline {subsubsection}{Float}{50}{section*.40}%
+\contentsline {subsubsection}{Overlap Heirarchy with Z-index}{51}{section*.41}%
+\contentsline {subsubsection}{Horizontal Centering Using Auto Margins}{51}{section*.42}%
+\contentsline {subsubsection}{Tertiary Colors}{51}{section*.43}%
+\contentsline {subsubsection}{Color Gradient}{52}{section*.45}%
+\contentsline {subsubsection}{CSS Stripes Using Repeating Linear Gradients}{53}{section*.46}%
+\contentsline {subsubsection}{Animations}{53}{section*.47}%
+\contentsline {subsubsection}{Movement Using CSS Animation}{55}{section*.48}%
+\contentsline {subsubsection}{Infinite Animation Loops}{55}{section*.49}%
+\contentsline {subsubsection}{Animate Elements at Variable Rates}{55}{section*.50}%
+\contentsline {subsubsection}{Bezier Curves in CSS}{56}{section*.51}%

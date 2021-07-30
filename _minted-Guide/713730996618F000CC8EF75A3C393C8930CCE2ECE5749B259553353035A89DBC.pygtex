@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{\PYGZsh{}}\PYG{n+nn}{anim} \PYG{p}{\PYGZob{}}
+  \PYG{k}{animation\PYGZhy{}name}\PYG{p}{:} \PYG{n}{colorful}\PYG{p}{;}
+  \PYG{k}{animation\PYGZhy{}duration}\PYG{p}{:} \PYG{l+m+mi}{3}\PYG{k+kt}{s}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{@}\PYG{k}{keyframes} \PYG{n+nt}{colorful} \PYG{p}{\PYGZob{}}
+  \PYG{n+nt}{0}\PYG{o}{\PYGZpc{}} \PYG{p}{\PYGZob{}}
+    \PYG{k}{background\PYGZhy{}color}\PYG{p}{:} \PYG{k+kc}{blue}\PYG{p}{;}
+  \PYG{p}{\PYGZcb{}}
+  \PYG{n+nt}{100}\PYG{o}{\PYGZpc{}} \PYG{p}{\PYGZob{}}
+    \PYG{k}{background\PYGZhy{}color}\PYG{p}{:} \PYG{k+kc}{yellow}\PYG{p}{;}
+  \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{background\PYGZhy{}color}\PYG{p}{:}\PYG{n+nd}{repeating\PYGZhy{}linear\PYGZhy{}gradient}\PYG{o}{(}\PYG{n+nt}{45deg}\PYG{o}{,} \PYG{n+nt}{color1} \PYG{n+nt}{start}\PYG{o}{,} \PYG{n+nt}{color1} \PYG{n+nt}{end}\PYG{o}{,} \PYG{n+nt}{color2} \PYG{n+nt}{start}\PYG{o}{,} \PYG{n+nt}{color2} \PYG{n+nt}{end}\PYG{o}{)}
+\end{Verbatim}

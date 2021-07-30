@@ -197,7 +197,7 @@ To emphasize text, you can use the em tag. This displays text as italicized, as 
 \mintinline{html}{<em></em>}
 
 \subsubsection{Strikethrough}
-To strikethrough text, which is when a horizontal line cuts across the characters, you can use the s tag. It shows that a section of text is no longer valid. With the s tag, the browser applies the CSS of \mintinline{css}{text-decoration: line-through;} to the element.
+To strikethrough text, which is when a horizontal line cuts across the characters, you can use the s tag. It shows that a section of text is no longer valid. With the s tag, the browser applies the CSS of \mintinline[breaklines]{css}{text-decoration: line-through;} to the element.
 \mint{html}{<s></s>}
 
 \subsubsection{Box Shadow}
@@ -206,20 +206,20 @@ To strikethrough text, which is when a horizontal line cuts across the character
 The box-shadow property applies one or more shadows to an element.
 
 The box-shadow property takes values for
-
-    \mintinline{css}{offset-x} (how far to push the shadow horizontally from the element),
-    \mintinline{css}{offset-y} (how far to push the shadow vertically from the element),
-    \mintinline{css}{blur-radius},
-    \mintinline{css}{spread-radius} and
-    \mintinline{css}{color}, in that order.
-
+\begin{itemize}
+    \item \mintinline{css}{offset-x} (how far to push the shadow horizontally from the element),
+    \item \mintinline{css}{offset-y} (how far to push the shadow vertically from the element),
+    \item \mintinline{css}{blur-radius},
+    \item \mintinline{css}{spread-radius} and
+    \item \mintinline{css}{color}, in that order.
+\end{itemize}
 The blur-radius and spread-radius values are optional.
 
 Multiple box-shadows can be created by using commas to separate properties of each box-shadow element.
 
 Here's an example of the CSS to create multiple shadows with some blur, at mostly-transparent black colors:
 
-\mint{css}{box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
+\mint[breaklines]{css}{box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
 
 \subsubsection{Hover State of an Anchor Tag}
 A pseudo-class is a keyword that can be added to selectors, in order to select a specific state of the element.
@@ -252,7 +252,7 @@ The next positioning tool does not actually use position, but sets the float pro
 \mint{css}{float:right;}
 
 \subsubsection{Overlap Heirarchy with Z-index}
-When elements are positioned to overlap (i.e. using \mintinline{css}{position: absolute | relative | fixed | sticky}), the element coming later in the HTML markup will, by default, appear on the top of the other elements. However, the z-index property can specify the order of how elements are stacked on top of one another. It must be an integer (i.e. a whole number and not a decimal), and higher values for the z-index property of an element move it higher in the stack than those with lower values.
+When elements are positioned to overlap (i.e. using \mintinline[breaklines]{css}{position: absolute | relative | fixed | sticky}), the element coming later in the HTML markup will, by default, appear on the top of the other elements. However, the z-index property can specify the order of how elements are stacked on top of one another. It must be an integer (i.e. a whole number and not a decimal), and higher values for the z-index property of an element move it higher in the stack than those with lower values.
 
 \mint{css}{z-index:0...x}
 
@@ -264,3 +264,134 @@ Another positioning technique is to center a block element horizontally. One way
 This method works for images, too. Images are inline elements by default, but can be changed to block elements when you set the display property to block.
 
 \mint{css}{margin:auto;}
+
+\subsubsection{Tertiary Colors}
+Computer monitors and device screens create different colors by combining amounts of red, green, and blue light. This is known as the RGB additive color model in modern color theory. Red (R), green (G), and blue (B) are called primary colors. Mixing two primary colors creates the secondary colors cyan (G + B), magenta (R + B) and yellow (R + G). You saw these colors in the Complementary Colors challenge. These secondary colors happen to be the complement to the primary color not used in their creation, and are opposite to that primary color on the color wheel. For example, magenta is made with red and blue, and is the complement to green.
+
+Tertiary colors are the result of combining a primary color with one of its secondary color neighbors. For example, within the RGB color model, red (primary) and yellow (secondary) make orange (tertiary). This adds six more colors to a simple color wheel for a total of twelve.
+
+There are various methods of selecting different colors that result in a harmonious combination in design. One example that can use tertiary colors is called the split-complementary color scheme. This scheme starts with a base color, then pairs it with the two colors that are adjacent to its complement. The three colors provide strong visual contrast in a design, but are more subtle than using two complementary colors.
+
+Here are three colors created using the split-complement scheme:
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c|c}
+         Color&Hex Code  \\
+         \hline\hline
+         Orange& \#FF7F00\\
+         Cyan & \#00FFFF\\
+         Raspberry&\#FF007F\\
+    \end{tabular}
+\end{table}
+
+\subsubsection{Color Gradient}
+Applying a color on HTML elements is not limited to one flat hue. CSS provides the ability to use color transitions, otherwise known as gradients, on elements. This is accessed through the background property's linear-gradient() function. Here is the general syntax:
+
+\mint[breaklines]{css}{background: linear-gradient(gradient_direction, color 1, color 2, color 3, ...);}
+
+The first argument specifies the direction from which color transition starts - it can be stated as a degree, where 90deg makes a horizontal gradient (from left to right) and 45deg makes a diagonal gradient (from bottom left to top right). The following arguments specify the order of colors used in the gradient.
+
+Example:
+
+\mint[breaklines]{css}{background: linear-gradient(90deg, red, yellow, rgb(204, 204, 255))}
+
+\subsubsection{CSS Stripes Using Repeating Linear Gradients}
+
+
+The repeating-linear-gradient() function is very similar to linear-gradient() with the major difference that it repeats the specified gradient pattern. repeating-linear-gradient() accepts a variety of values, but for simplicity, you'll work with an angle value and color stop values in this challenge.
+
+The angle value is the direction of the gradient. Color stops are like width values that mark where a transition takes place, and are given with a percentage or a number of pixels.
+
+In the example demonstrated in the code editor, the gradient starts with the color yellow at 0 pixels which blends into the second color blue at 40 pixels away from the start. Since the next color stop is also at 40 pixels, the gradient immediately changes to the third color green, which itself blends into the fourth color value red as that is 80 pixels away from the beginning of the gradient.
+
+For this example, it helps to think about the color stops as pairs where every two colors blend together.
+
+\mint[breaklines]{css}{
+0px [yellow -- blend -- blue] 40px [green -- blend -- red] 80px}
+
+If every two color stop values are the same color, the blending isn't noticeable because it's between the same color, followed by a hard transition to the next color, so you end up with stripes.
+
+In other words, you can control the end location of a gradient by duplicating the color to the start location of the next color.
+
+\mint[breaklines]{css}{background-color:repeating-linear-gradient(45deg, color1 start, color1 end, color2 start, color2 end)}
+
+\subsubsection{Animations}
+
+To animate an element, you need to know about the animation properties and the @keyframes rule. The animation properties control how the animation should behave and the @keyframes rule controls what happens during that animation.
+
+The 8 animation properties are as follows:
+
+\begin{itemize}
+    \item \mintinline{css}{animation-name}
+
+        Specifies a name for the \mintinline{css}{@keyframes} animation.
+    \item \mintinline{css}{animation-duration}
+
+        Defines how long an animation should take to complete one cycle.
+    \item \mintinline{css}{animation-timing-function}
+
+        Specifies the speed curve of an animation. i.e. Linear, ease, ease-in, ease-out, ease-in-out, etc.
+    \item \mintinline{css}{animation-delay}
+
+        Specifies a delay value for the start of an animation.
+    \item \mintinline{css}{animation-iteration-count}
+
+        Specifies the amount of times an animation should be played.
+    \item \mintinline{css}{animation-direction}
+
+        Specifies how an animation should be played. i.e. normal, reverse, alternate, alternate-reverse, etc.
+    \item \mintinline{css}{animation-fill-mode}
+
+        Specifies which style the element inherits when the animation is not playing. This can be before it starts, after it ends, or both. Forwards - retain style of last keyframe once animation is over. Backwards - get the style of the first keyframe and retain until delay is over. Both - follow rules for both forwards and backwards.
+    \item \mintinline{css}{animation-play-state}
+
+        Use this in JavaScript to control whether the animation is paused or playing.
+\end{itemize}
+
+Unless specified, the animation-duration property defaults to 0.
+
+\mintinline{css}{@keyframes} is how to specify exactly what happens within the animation over the duration. This is done by giving CSS properties for specific "frames" during the animation, with percentages ranging from 0\% to 100\%. If you compare this to a movie, the CSS properties for 0\% is how the element displays in the opening scene. The CSS properties for 100\% is how the element appears at the end, right before the credits roll. Then CSS applies the magic to transition the element over the given duration to act out the scene. Here's an example to illustrate the usage of \mintinline{css}{@keyframes} and the animation properties:
+\begin{codeBlock}{css}{Example Animation}
+#anim {
+  animation-name: colorful;
+  animation-duration: 3s;
+}
+
+@keyframes colorful {
+  0% {
+    background-color: blue;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+\end{codeBlock}
+
+\subsubsection{Movement Using CSS Animation}
+When elements have a specified position, such as fixed or relative, the CSS offset properties right, left, top, and bottom can be used in animation rules to create movement.
+
+\subsubsection{Infinite Animation Loops}
+
+You can manually set the amount of iterations an animation does by using the \mintinline[breaklines]{css}{animation-iteration-count:x;} property. By setting the value of X to \emph{infinite}, you can force the animation to loop endlessly.
+
+\subsubsection{Animate Elements at Variable Rates}
+
+
+There are a variety of ways to alter the animation rates of similarly animated elements. So far, this has been achieved by applying an animation-iteration-count property and setting @keyframes rules.
+
+To illustrate, the animation on the right consists of two stars that each decrease in size and opacity at the 20\% mark in the \mintinline[breaklines]{css}{@keyframes} rule, which creates the twinkle animation. You can change the \mintinline[breaklines]{css}{@keyframes} rule for one of the elements so the stars twinkle at different rates.
+
+Animation rates can also be changed by altering the \mintinline{css}{animation-duration} of multiple elements.
+
+\subsubsection{Bezier Curves in CSS}
+
+
+The last challenge introduced the animation-timing-function property and a few keywords that change the speed of an animation over its duration. CSS offers an option other than keywords that provides even finer control over how the animation plays out, through the use of Bezier curves.
+
+In CSS animations, Bezier curves are used with the \mintinline{css}{cubic-bezier} function. The shape of the curve represents how the animation plays out. The curve lives on a 1 by 1 coordinate system. The X-axis of this coordinate system is the duration of the animation (think of it as a time scale), and the Y-axis is the change in the animation.
+
+The cubic-bezier function consists of four main points that sit on this 1 by 1 grid: p0, p1, p2, and p3. p0 and p3 are set for you - they are the beginning and end points which are always located respectively at the origin (0, 0) and (1, 1). You set the x and y values for the other two points, and where you place them in the grid dictates the shape of the curve for the animation to follow. This is done in CSS by declaring the x and y values of the p1 and p2 "anchor" points in the form: (x1, y1, x2, y2). Pulling it all together, here's an example of a Bezier curve in CSS code:
+\mint[breaklines]{css}{
+animation-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
+In the example above, the x and y values are equivalent for each point (x1 = 0.25 = y1 and x2 = 0.75 = y2), which if you remember from geometry class, results in a line that extends from the origin to point (1, 1). This animation is a linear change of an element during the length of an animation, and is the same as using the linear keyword. In other words, it changes at a constant speed.

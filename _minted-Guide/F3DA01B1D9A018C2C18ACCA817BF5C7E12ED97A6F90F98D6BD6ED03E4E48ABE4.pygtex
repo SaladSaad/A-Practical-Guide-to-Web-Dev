@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{background}\PYG{o}{:} \PYG{n+nt}{linear\PYGZhy{}gradient}\PYG{o}{(}\PYG{n+nt}{90deg}\PYG{o}{,} \PYG{n+nt}{red}\PYG{o}{,} \PYG{n+nt}{yellow}\PYG{o}{,} \PYG{n+nt}{rgb}\PYG{o}{(}\PYG{n+nt}{204}\PYG{o}{,} \PYG{n+nt}{204}\PYG{o}{,} \PYG{n+nt}{255}\PYG{o}{))}
+\end{Verbatim}

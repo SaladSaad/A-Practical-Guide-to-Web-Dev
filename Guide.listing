@@ -1,12 +1,13 @@
-  .penguin {
-    --penguin-skin: black;
-    --penguin-belly: gray;
-    --penguin-beak: yellow;
-  }
+#anim {
+  animation-name: colorful;
+  animation-duration: 3s;
+}
 
-  .penguin-top {
-    top: 10%;
-    left: 25%;
-
-    background: var(--pengiun-skin, black);
+@keyframes colorful {
+  0% {
+    background-color: blue;
   }
+  100% {
+    background-color: yellow;
+  }
+}
